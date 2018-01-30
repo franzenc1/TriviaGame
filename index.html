@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+	<h1>Welcome to Nuggets Trivia!</h1>
+			<button id="start"> Click When Ready!</button>
+
+			<div id="clock"></div>
+
+			<form id="trivia-questions">
+				<ol>
+				<p>1. Which retired former Nugget does not have his jersey retired by the team? <br> <br>
+						<input type="radio" name="Q0" value="A">Dan Issel 
+						<input type="radio" name="Q0" value="B">Alex English  
+						<input type="radio" name="Q0" value="C">Chauncey Billups  
+						<input type="radio" name="Q0" value="D">Fat Lever</p>
+
+				<p>2. What country is current Nuggets player Nikola Jokic from? <br> <br>
+						<input type="radio" name="Q1" value="A">Bosnia 
+						<input type="radio" name="Q1" value="B">Serbia  
+						<input type="radio" name="Q1" value="C">Argentina 
+						<input type="radio" name="Q1" value="D">Australia</p>
+
+				<p>3. Which NBA team was Nugget coach Michael Malone once the head coach for? <br> <br>
+						<input type="radio" name="Q2" value="A">Kings
+						<input type="radio" name="Q2" value="B">76ers 
+						<input type="radio" name="Q2" value="C">Warriors
+						<input type="radio" name="Q2" value="D">Cavaliers</p>
+
+				<p>4. Which NBA team has beaten the Nuggets twice in the Western Conference Finals? <br> <br>
+						<input type="radio" name="Q3" value="A">Timberwolves
+						<input type="radio" name="Q3" value="B">Pacers
+						<input type="radio" name="Q3" value="C">Bulls
+						<input type="radio" name="Q3" value="D">Lakers</p>
+
+				<p>5. Nuggets players Jamal Murray and Trey Lyles played collegiately for which school? <br> <br>
+						<input type="radio" name="Q4" value="A">Syracuse
+						<input type="radio" name="Q4" value="B">Moorhead State
+						<input type="radio" name="Q4" value="C">Michigan State
+						<input type="radio" name="Q4" value="D">Kentucky</p>
+
+				<p>6. Which current or former Nugget hasn't worn jersey number '14' while with Denver? <br> <br>
+						<input type="radio" name="Q5" value="A">Raymond Felton
+						<input type="radio" name="Q5" value="B">Robert Pack
+						<input type="radio" name="Q5" value="C">Gary Harris
+						<input type="radio" name="Q5" value="D">Michael Adams</p>
+
+				<p>7. Which former Nugget has never served as either head coach or general manager of the team? <br> <br>
+						<input type="radio" name="Q6" value="A">Kiki Vandeweghe
+						<input type="radio" name="Q6" value="B">Bill Hanzlik
+						<input type="radio" name="Q6" value="C">Reggie Williams
+						<input type="radio" name="Q6" value="D">Dan Issel</p>
+				
+				<p>8. Which former Nugget play-by-play announcer was never a broadcaster for the Colorado Rockies?<br> <br>
+						<input type="radio" name="Q7" value="A">Jeff Kingery
+						<input type="radio" name="Q7" value="B">Al Albert
+						<input type="radio" name="Q7" value="C">Drew Goodman
+						<input type="radio" name="Q7" value="D">Jerry Schemmel</p>
+								</ol>
+				</form>
+				<button onclick="returnValues()" id="submit"">Submit Answers</button>
+
+				<div id="results">
+					<h2 id="time-up"> Time's Up! </h2>
+					<h2 id="thanks"></h2>
+					<h2>HERE ARE YOUR RESULTS</h2>
+					 </div>
+					<div id="right"></div>
+					<div id="wrong"></div>
+					<div id="blank"></div>
+				
+				
+		</div>
+</body>
+</html>
